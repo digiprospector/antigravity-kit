@@ -23,7 +23,7 @@
 ## 🛠 自动化指令集
 ### @git-pro save (智能提交与环境清理)
 - **逻辑**: 
-    1. **智能过滤**: 在执行 `add` 之前，扫描工作区是否包含 AI Agent 相关目录（如 `.antigravity/`, `.agents/`, `.cursor/`, `.clinerules` 等）。
+    1. **智能过滤**: 在执行 `add` 之前，扫描工作区是否包含 AI Agent 相关目录（如 `.antigravity/`, `.agents/`, `.cursor/`, `.clinerules`, `.vscode/`, `.claude/`, `.codex/`等）。
     2. **自动忽略**: 若发现上述目录未被忽略，先行将其路径追加至 `.gitignore` 文件中，并告知用户。
     3. **安全暂存**: 执行 `git add .`（此时已自动排除被忽略的 AI 目录）。
     4. **差异分析**: 分析 `git diff --cached`。
