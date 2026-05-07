@@ -15,4 +15,4 @@ jobs:
           target_sync_branch: main        # 你仓库的分支名（通常是 main 或 master）
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
           upstream_sync_branch: main      # 上游仓库的分支名
-          upstream_sync_repo: original-owner/original-repo # 改为上游仓库的路径
+          upstream_sync_repo: vudovn/antigravity-kit
